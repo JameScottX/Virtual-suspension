@@ -6,7 +6,7 @@
 
 
 # Software & Environment  
- Win10 or Linux(Webots supported)  
+ Win10 or Linux (Webots supported)  
  Webots R2020a  
  Python 3.7 or higher  
 
