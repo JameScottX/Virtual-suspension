@@ -1,4 +1,4 @@
-#   Quadruped robot leg class
+#   Single-leg robot leg class
 #   Created in 2019 10/20
 #   Vision = 1.0
 #   Author Junwen Cui

@@ -33,10 +33,10 @@ class Biped(Supervisor):
         self.attitude = Attitude()  #body attitude roll pitch yaw
 
         self.imu = InertialUnit(module_name['imu'])
-        self.imu.enable(1)
+        self.imu.enable(2)
 
         self.gps = GPS(module_name['gps'])
-        self.gps.enable(1)
+        self.gps.enable(2)
         
         self.gps_pos_now = Pos()      #my coordinates
         self.gps_pos = Pos()          #gps raw coordinates

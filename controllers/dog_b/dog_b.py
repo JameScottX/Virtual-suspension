@@ -46,10 +46,10 @@ class Dog(Supervisor):
         self.attitude = Attitude()  #body attitude roll pitch yaw
 
         self.imu = InertialUnit(module_name['imu'])
-        self.imu.enable(1)  #1000Hz
+        self.imu.enable(2)  #500Hz
 
         self.gps = GPS(module_name['gps'])
-        self.gps.enable(1)  #1000Hz
+        self.gps.enable(2)  #500Hz
         
         self.gps_pos_now = Pos()   #my coordinates
         self.gps_pos = Pos()       #gps raw coordinates
@@ -244,7 +244,7 @@ while robot.step(timestep) != -1:
  
     times += 1
     robot.refresh()
-
+ 
     if(times <  (1000/timestep) * 0.1):
         robot.stand_up()
 
